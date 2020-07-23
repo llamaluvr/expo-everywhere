@@ -1,0 +1,37 @@
+import React from 'react';
+import { SectionList } from 'react-native';
+import { sortBy } from 'lodash';
+import InboxItem from './InboxItem';
+import { ItemSeparator, SectionHeader } from '../common';
+import { colors } from '../../config/common-styles';
+
+const Inbox = ({ messages, onPressMessage, isLoading, onRefresh }) => {
+  let sections = [];
+
+  console.log(messages);
+
+  // we don't want to show the empty sections while they're loading
+  if (messages.length !== 0) {
+    const newItems = sortBy(messages.filter(i => i.isNew), m => m.date).reverse();
+    const oldItems = sortBy(messages.filter(i => !i.isNew), m => m.date).reverse();
+    sections = [
+      { title: 'New Items', data: newItems },
+      { title: 'Not-so-new Items', data: oldItems },
+    ];
+  }
+
+  return (
+    <SectionList
+      style={{ backgroundColor: colors.background }}
+      renderSectionHeader={({ section: { title } }) => <SectionHeader title={title} />}
+      sections={sections}
+      keyExtractor={message => message.id}
+      renderItem={({ item }) => <InboxItem message={item} onPress={onPressMessage} />}
+      ItemSeparatorComponent={ItemSeparator}
+      onRefresh={onRefresh}
+      refreshing={isLoading}
+    />
+  );
+};
+
+export default Inbox;
