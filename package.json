@@ -33,17 +33,19 @@
     "moment": "^2.27.0",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
-    "react": "~16.11.0",
-    "react-dom": "~16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-gifted-chat": "^0.16.3",
     "react-native-iphone-x-helper": "^1.2.1",
     "react-native-material-initials": "^0.0.12",
     "react-native-reanimated": "~1.9.0",
     "react-native-safe-area-context": "~3.0.7",
-    "react-native-screens": "~2.9.0",
-    "react-native-web": "~0.11.7"
+    "react-native-screens": "~2.9.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-dom": "*",
+    "react-native-web": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
