@@ -1,3 +1,4 @@
-import Storyboard from './storyboard/Storyboard';
+import Storyboard from './storyboard/InboxScreen';
+import InboxScreen from './storyboard/InboxScreen';
 
-export default Storyboard;
+export default InboxScreen;
