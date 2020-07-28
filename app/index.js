@@ -1,4 +1,5 @@
-import Storyboard from './storyboard/InboxScreen';
 import InboxScreen from './storyboard/InboxScreen';
+import ChatScreen from './storyboard/ChatScreen';
+import SettingsScreen from './storyboard/SettingsScreen';
 
-export default InboxScreen;
+export default { InboxScreen, ChatScreen, SettingsScreen };
