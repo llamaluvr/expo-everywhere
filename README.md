@@ -133,7 +133,7 @@ module.exports = override(
     "eject": "react-app-rewired eject"
   },
 ```
-7. Run `yarn start`
+7. Import and use, run `yarn start` to check it out.
 
 Non-CRA web instructions are generally the same, just involving a different syntax for directly editing babel/ webpack files to transpile the react native dependencies. See the instructions from Material Bread (https://material-bread.org/getting-started/web/) and just addjust to account for the different libraries in the `babelInclude()` above.
 
