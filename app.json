@@ -17,7 +17,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.llamaluvr.expoeverywhere",
+      "buildNumber": "1",
       "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.llamaluvr.expoeverywhere"
     },
     "web": {
       "favicon": "./assets/favicon.png"
