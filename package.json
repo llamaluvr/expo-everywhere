@@ -7,6 +7,7 @@
     "build-package": "npx babel app --out-dir dist --ignore \"**/*.test.js\""
   },
   "dependencies": {
+    "@expo/vector-icons": "^10.2.0",
     "axios": "^0.19.2",
     "axios-mock-adapter": "^1.18.2",
     "lodash": "^4.17.19",
@@ -20,11 +21,11 @@
     "react-native-material-initials": "https://github.com/llamaluvr/react-native-material-initials.git"
   },
   "peerDependencies": {
+    "expo": "~38.0.8",
     "react": "*",
-    "react-native": "*",
     "react-dom": "*",
-    "react-native-web": "*",
-    "expo": "~38.0.8"
+    "react-native": "*",
+    "react-native-web": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
