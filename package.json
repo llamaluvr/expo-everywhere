@@ -2,7 +2,7 @@
   "name": "expo-everywhere",
   "version": "1.0.0",
   "homepage": "http://llamaluvr.github.io/expo-everywhere",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "build-package": "npx babel app --out-dir dist --ignore \"**/*.test.js\""
   },
