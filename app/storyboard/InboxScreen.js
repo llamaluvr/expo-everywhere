@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { View } from 'react-native';
-import { Feather } from '@expo/vector-icons';
 import Inbox from '../components/inbox';
 import { messageRepository } from '../stores/instances';
 

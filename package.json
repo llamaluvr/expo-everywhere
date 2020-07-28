@@ -11,12 +11,16 @@
       {
         "from": "dist/main/",
         "to": "./",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "dist/renderer",
         "to": "./",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       "package.json",
       "**/node_modules/**/*"
@@ -34,6 +38,7 @@
     "web-deploy": "gh-pages -d web-build"
   },
   "dependencies": {
+    "@expo/match-media": "^0.0.0-beta.2",
     "@expo/vector-icons": "^10.2.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.7.2",
@@ -58,14 +63,15 @@
     "react-native-reanimated": "~1.9.0",
     "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "react-responsive": "^8.1.0"
   },
   "devDependencies": {
-    "electron": "^6.0.12",
     "@babel/core": "^7.8.6",
     "@expo/electron-adapter": "^0.0.7",
     "@expo/webpack-config": "^0.12.20",
     "babel-preset-expo": "~8.1.0",
+    "electron": "^6.0.12",
     "electron-builder": "^22.7.0",
     "gh-pages": "^3.1.0"
   },
